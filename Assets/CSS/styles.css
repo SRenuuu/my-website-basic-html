@@ -1,0 +1,1466 @@
+html {
+    scroll-behavior: smooth;
+    transition: all 5s ease-in-out;
+}
+
+body {
+    background-image: url("/Assets/Images/Page BG3.jpg");
+    background-size: 4000px;
+    font-family: Roboto, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 2.7em;
+    font-weight: 300;
+    margin-bottom: 12px;
+    margin-top: 18px;
+
+}
+
+h2 {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 2em;
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 28px;
+
+}
+
+h3 {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+h4 {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 0;
+    margin-bottom: -5px;
+
+}
+
+h6 {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+    line-height: 0;
+
+}
+
+.typing {
+    overflow: hidden;
+    border-right: 2px solid orange;
+    white-space: nowrap;
+    margin: 10px 0 20px 0;
+    animation: typing 20s infinite, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+
+}
+
+@keyframes blink-caret {
+    0%, 100% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: darkgrey;
+    }
+}
+
+div.progress-bar {
+    background: #C4C4C4;
+    border-radius: 20px;
+    height: 8px;
+    width: 100%;
+}
+
+div.progress {
+    background: #2E9CCA;
+    border-radius: 20px;
+    height: 8px;
+
+}
+
+div.dark_blue_circle {
+    background: #25274D;
+    border-radius: 50%;
+    height: 24px;
+    margin-top: 28px;
+    position: absolute;
+    width: 24px;
+}
+
+div.light_blue_circle {
+    background: #2E9CCA;
+    border-radius: 50%;
+    height: 24px;
+    margin-top: 28px;
+    position: absolute;
+    width: 24px;
+}
+
+div.gray_circle {
+    background: #C4C4C4;
+    border-radius: 50%;
+    height: 70px;
+    left: 0;
+    margin: 32px auto auto;
+    position: absolute;
+    right: 0;
+    width: 70px;
+
+}
+
+div.social_media_button {
+    background: #C5C6C7;
+
+    border-radius: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    height: 45px;
+    margin-right: 20px;
+    position: relative;
+    width: 45px;
+}
+
+div.social_media_button:hover {
+    background: rgba(196, 196, 196, 0.6);
+    box-shadow: 0 2px 50px rgba(0, 0, 0, 0.15);
+}
+
+.fade-in {
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-name: fadeInOpacity;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    opacity: 1;
+
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form_input {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #25274D;
+
+    margin-left: 8px;
+
+}
+
+.form_buttons {
+
+    border-radius: 20px;
+    margin: -18px auto auto;
+    padding: 6px 20px 4px 20px;
+
+}
+
+.contact_detail {
+    color: #25274D;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+    top: 130px;
+}
+
+i.fa-facebook-f:hover {
+    color: #4267B2;
+}
+
+i.fa-instagram:hover {
+    color: #F56040;
+}
+
+i.fa-linkedin-in:hover {
+    color: #2867B2;
+}
+
+a.page_nav_links {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 2px;
+
+}
+
+a.page_nav_links:hover {
+    border-bottom: 1.5px solid #25274D;
+    color: #25274D;
+    padding-bottom: 2px;
+
+}
+
+a.page_nav_links:active {
+    color: #25274D;
+
+}
+
+body > header {
+    height: 65px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+
+}
+
+body > header > div {
+    background: rgba(197, 198, 199, 0.9);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+body > header > nav {
+
+    bottom: 0;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 21px;
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: fit-content;
+}
+
+body > header > nav > ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+body > header > nav > ul > li {
+    display: inline;
+    padding: 50px;
+}
+
+body > main > section {
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    position: relative;
+    right: 0;
+}
+
+body > main > section#Home > div:nth-child(1) > article > nav > a > div > i, body > footer > div > nav > a > div > i {
+    bottom: 0;
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: fit-content;
+}
+
+body > main > section#Home > div:nth-child(2) {
+    text-align: right;
+}
+
+body > main > section#Home > div:nth-child(2) > picture {
+    display: inline-block;
+}
+
+body > main > section#Home > div:nth-child(2) > picture > img {
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    height: 400px;
+}
+
+body > main > section#Home > div {
+    height: 100%;
+    width: 44%;
+
+}
+
+body > main > section#Home > div:nth-child(1) > article > nav {
+    display: flex;
+    justify-content: left;
+    margin-top: 60px;
+
+}
+
+body > main > section#Home {
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 30px 0 30px;
+    width: 70vw;
+}
+
+body > main > section#About {
+    padding: 70px 30px 0;
+    width: 80vw;
+}
+
+.section-title {
+    width: 60vw;
+    margin: auto;
+}
+
+body > main > section#About > article:nth-child(1) p {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+
+body > main > section#About > article:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+body > main > section#About > article:nth-child(2) > picture {
+    margin: auto;
+}
+
+body > main > section#About > article:nth-child(2) > picture > img {
+    border-radius: 8%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.25);
+    height: 400px;
+}
+
+body > main > section#About > article:nth-child(2) > section {
+    padding: 40px 0 60px 60px;
+}
+
+body > main > section#About > article:nth-child(2) > section > p {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+body > main > section#Stats {
+    background-image: url("../Images/BG1.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 60px;
+    padding-top: 40px;
+    width: 100vw;
+
+}
+
+body > main > section#Stats > div {
+    bottom: 0;
+    color: white;
+    display: flex;
+    height: 150px;
+    justify-content: space-around;
+    left: 0;
+    margin: auto;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 90%;
+
+}
+
+body > main > section#Skills {
+    padding-top: 70px;
+    width: 75vw;
+}
+
+body > main > section#Skills > section {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+}
+
+body > main > section#Skills > section > div {
+    left: 0;
+    margin-left: 12%;
+    margin-right: 12%;
+    right: 0;
+    padding: 10px;
+}
+
+body > main > section#Skills > section > div.skill div.progress-bar div.progress {
+    animation: fill1 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+body > main > section#Skills > section > div.skill:nth-child(2) > div.progress-bar > div.progress {
+    animation: fill2 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+body > main > section#Skills > section > div.skill:nth-child(3) > div.progress-bar > div.progress {
+    animation: fill3 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+body > main > section#Skills > section > div.skill:nth-child(4) > div.progress-bar > div.progress {
+    animation: fill4 3s ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+body > main > section#Skills > section > div.skill:nth-child(5) > div.progress-bar > div.progress {
+    animation: fill5 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+body > main > section#Skills > section > div.skill:nth-child(6) > div.progress-bar > div.progress {
+    animation: fill6 3s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fill1 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+
+    }
+}
+
+@keyframes fill2 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+
+    }
+}
+
+@keyframes fill3 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+
+    }
+}
+
+@keyframes fill4 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+
+    }
+}
+
+@keyframes fill5 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+
+    }
+}
+
+@keyframes fill6 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+
+    }
+}
+
+body > main > section#Skills > article {
+    display: flex;
+    height: 200px;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+body > main > section#Skills > article > div:hover {
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
+    color: #2E9CCA;
+    height: 132px;
+    transition: all 0.4s ease;
+    width: 132px;
+
+}
+
+body > main > section#Skills > article > div {
+    border: 1.5px solid #C4C4C4;
+    bottom: 0;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    transition: all 0.4s ease;
+
+    width: 120px;
+}
+
+body > main > section#Skills > article > div > i {
+    bottom: 0;
+    height: fit-content;
+    left: 0;
+    margin: auto;
+    position: relative;
+    right: 0;
+    top: 22%;
+    width: fit-content;
+}
+
+body > main > section#Contact {
+    height: fit-content;
+    padding-top: 70px;
+    width: 100%;
+}
+
+body > main > section#Contact > section {
+    margin-top: 60px;
+    background-color: rgba(197, 198, 199, 0.5);
+    height: 550px;
+
+}
+
+body > main > section#Contact > section > address > div > div > img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.5em;
+}
+
+body > main > section#Contact > section > address {
+    background-color: rgba(196, 196, 196, 0.3);
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: inherit;
+    left: 0;
+    margin: auto;
+    opacity: 100%;
+    position: absolute;
+    width: 30%;
+
+}
+
+body > main > section#Contact > section > div {
+    height: inherit;
+    left: 30%;
+
+    margin: auto;
+    position: absolute;
+    width: 70%;
+}
+
+body > main > section#Contact > section > address > div {
+    text-align: center;
+}
+
+body > main > section#Contact > section > div > form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: fit-content;
+    margin-left: 40px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: absolute;
+    width: 92%;
+
+}
+
+body > main > section#Contact > section > div > form > div {
+    border-bottom: 1.5px solid #25274D;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 6px;
+    position: relative;
+    top: 0;
+    width: 95%;
+}
+
+body > main > section#Contact > section > div > form > div > input.form_buttons:nth-child(1) {
+    position: absolute;
+    right: 105px;
+
+}
+
+body > main > section#Contact > section > div > form > div > input.form_buttons:nth-child(2) {
+    position: absolute;
+    right: 0;
+
+}
+
+body > main > section#Contact > section > div > form > div:nth-child(6) {
+
+    border-bottom: none;
+}
+
+body > footer > div {
+    background: rgba(0, 0, 0, 0.3);
+    height: 220px;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+body > footer > div > nav {
+    display: flex;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: fit-content;
+}
+
+body > footer > div > nav > a > div.social_media_button {
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+body > footer > div > section {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 16px;
+    left: 0;
+    line-height: 22px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 135px;
+}
+
+nav > a {
+    color: black;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
+    a.page_nav_links:hover {
+        border-bottom: 1px solid #25274D;
+        color: #25274D;
+        padding-bottom: 0.75px;
+
+    }
+
+    body > header > nav > ul > li {
+        padding: 28px;
+    }
+
+    body > header > nav {
+        font-size: 16px;
+    }
+
+    body > header {
+        height: 55px;
+    }
+
+    body > main > section#Home {
+        padding-top: 110px;
+        width: 80vw;
+        /*width: 850px;*/
+    }
+
+    body > main > section#Home > div:nth-child(2) > picture > img {
+        height: 320px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin-top: 18px;
+    }
+
+    h3 {
+        font-family: "Roboto Medium", sans-serif;
+        font-size: 26px;
+        font-weight: 200;
+        text-align: center;
+
+    }
+
+    h4 {
+        font-family: "Roboto Light", sans-serif;
+        font-size: 17px;
+        margin-bottom: 16px;
+    }
+
+    h5 {
+        font-family: "Roboto Medium", sans-serif;
+        font-size: 30px;
+        font-weight: 100;
+        line-height: 0;
+        margin-bottom: -5px;
+
+    }
+
+    h6 {
+        font-family: "Roboto Light", sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 15px;
+        margin-bottom: -20px;
+
+    }
+
+    div.social_media_button {
+        height: 40px;
+        width: 40px;
+
+    }
+
+    .fa-lg {
+        font-size: 1.1em;
+    }
+
+    body > main > section#About {
+        position: relative;
+        padding-top: 60px;
+        width: 80vw;
+    }
+
+    body > main > section#About > article:nth-child(1) {
+        font-size: 17px;
+    }
+
+    body > main > section#About > article:nth-child(2) > picture > img {
+        height: 320px;
+    }
+
+    body > main > section#About > article:nth-child(2) > section {
+        margin-top: 0;
+    }
+
+    body > main > section#About > article:nth-child(2) > section > p {
+        font-size: 16px;
+        margin-left: 60px;
+        margin-top: 22px;
+    }
+
+    body > main > section#Skills {
+        position: relative;
+        padding-top: 80px;
+        width: 90%;
+
+    }
+
+    body > main > section#Skills > section {
+        height: 250px;
+    }
+
+    body > main > section#Skills > article {
+        top: 400px;
+    }
+
+    body > main > section#Skills > article > div {
+        font-size: 14px;
+        height: 100px;
+        width: 100px;
+    }
+
+    body > main > section#Skills > article > div:hover {
+        height: 110px;
+        width: 110px;
+    }
+
+    body > main > section#Stats {
+        position: relative;
+        height: 130px;
+    }
+
+
+    body > main > section#Contact {
+        position: relative;
+
+        padding-top: 65px;
+    }
+
+    body > main > section#Contact > section > div > form {
+        height: 360px;
+        margin-left: 30px;
+        margin-top: 24px;
+        width: 90%;
+
+    }
+
+    body > main > section#Contact > section > div > form > div {
+        border-bottom: 1px solid #25274D;
+        padding-bottom: 4px;
+    }
+
+    body > main > section#Contact > section {
+        background-color: rgba(197, 198, 199, 0.5);
+        height: 400px;
+    }
+
+    div.gray_circle {
+        height: 55px;
+        margin: 22px auto auto;
+        width: 55px;
+    }
+
+    body > main > section#Contact > section > address > div > div > img {
+        width: 2.2em;
+    }
+
+    .contact_detail {
+        font-size: 15px;
+        top: 95px;
+    }
+
+    body > main > section#Contact > section > div > form > label {
+        font-size: 15px;
+    }
+
+    body > main > section#Contact > section > div > form > div {
+        padding-bottom: 2px;
+    }
+
+    section#Contact > section > div > form > div > input.form_buttons {
+        font-size: 15px;
+    }
+
+    body > footer > div {
+        height: 160px;
+    }
+
+    body > footer > div > nav {
+        top: 32px;
+    }
+
+    body > footer > div > section {
+        font-size: 14px;
+        line-height: 18px;
+        top: 100px;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    body > header > nav > ul {
+        line-height: 24px;
+        text-align: center;
+    }
+
+    body > header > nav > ul > li {
+        padding: 18px;
+    }
+
+    body > header > nav {
+        font-size: 14px;
+    }
+
+    body > header {
+        height: 65px;
+    }
+
+    body > main > section#Home {
+        padding-top: 100px;
+        width: 85vw;
+
+        /*width: 850px;*/
+    }
+
+    body > main > section#Home > div:nth-child(1) {
+        width: 40%;
+    }
+
+    div.social_media_button {
+        background: #C5C6C7;
+
+        border-radius: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        height: 40px;
+        margin-right: 16px;
+        position: relative;
+        width: 40px;
+    }
+
+    body > main > section#Home > div:nth-child(2) {
+        width: 60%;
+    }
+
+    body > main > section#Home > div:nth-child(2) > picture > img {
+
+        height: 250px;
+    }
+
+    body > main > section#Home > div:nth-child(1) > article > nav {
+        margin-top: 35px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 4px;
+    }
+
+    h3 {
+        font-family: "Roboto Medium", sans-serif;
+        font-size: 20px;
+        font-weight: 100;
+        text-align: center;
+
+    }
+
+    h4 {
+        font-family: "Roboto Light", sans-serif;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    h5 {
+        font-family: "Roboto Medium", sans-serif;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 48px;
+        margin-bottom: -30px;
+
+    }
+
+    h6 {
+        font-family: "Roboto Light", sans-serif;
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 4px;
+        margin-bottom: -20px;
+
+    }
+
+    div.social_media_button {
+        height: 32px;
+        width: 32px;
+
+    }
+
+    .fa-lg {
+        font-size: 1em;
+    }
+
+    body > main > section#About {
+        padding-top: 60px;
+        top: 330px;
+        width: 88vw;
+    }
+
+    body > main > section#About > article:nth-child(1) {
+        font-size: 14px;
+    }
+
+    body > main > section#About > article:nth-child(2) {
+        width: 100%;
+    }
+
+    body > main > section#About > article:nth-child(2) > picture {
+        align-self: center;
+    }
+
+    body > main > section#About > article:nth-child(2) > section {
+        align-self: center;
+    }
+
+    body > main > section#About > article:nth-child(2) {
+        margin-top: 50px;
+    }
+
+    body > main > section#About > article:nth-child(2) > picture > img {
+        height: 220px;
+    }
+
+    body > main > section#About > article:nth-child(2) > section {
+        margin: auto;
+    }
+
+    body > main > section#About > article:nth-child(2) > section > p {
+        font-size: 0.83em;
+        line-height: 1.1em;
+        margin-left: 20px;
+        margin-top: 22px;
+    }
+
+    body > main > section#Skills {
+        padding-top: 100px;
+        width: 90%;
+
+    }
+
+    body > main > section#Skills > section {
+
+        height: 180px;
+    }
+
+    body > main > section#Skills > h3 {
+        margin: 10px;
+    }
+
+    div.progress {
+        height: 6px;
+    }
+
+    div.progress-bar {
+        height: 6px;
+    }
+
+    body > main > section#Skills > article {
+        top: 300px;
+    }
+
+    body > main > section#Skills > article > div {
+        font-size: 10px;
+        height: 75px;
+        width: 75px;
+    }
+
+    body > main > section#Skills > article > div:hover {
+        height: 82.5px;
+        width: 82.5px;
+    }
+
+    body > main > section#Stats {
+        height: 100px;
+    }
+
+    body > main > section#Contact {
+
+        padding-top: 65px;
+    }
+
+    body > main > section#Contact > section > div > form {
+        height: 360px;
+        margin-left: 7vw;
+        margin-top: 45px;
+        width: 85%;
+
+    }
+
+    body > main > section#Contact > section > address {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        height: 120px;
+        width: 100%;
+    }
+
+    body > main > section#Contact > section > div {
+        height: 500px;
+        left: 0;
+        top: 230px;
+        width: 100%;
+    }
+
+    div.gray_circle {
+        height: 48px;
+        margin: 14px auto auto;
+        position: relative;
+        width: 48px;
+    }
+
+    body > main > section#Contact > section > address > div > div > img {
+        padding-top: 6px;
+        position: relative;
+        width: 2em;
+
+    }
+
+    body > main > section#Contact > section > div > form > div {
+        border-bottom: 1px solid #25274D;
+        padding-bottom: 4px;
+    }
+
+    body > main > section#Contact > section {
+        background-color: rgba(197, 198, 199, 0.5);
+        height: 525px;
+    }
+
+    div.gray_circle {
+        height: 48px;
+        margin: 22px auto auto;
+        width: 48px;
+    }
+
+    body > main > section#Contact > section > address > div > div > img {
+        width: 2em;
+    }
+
+    .contact_detail {
+        font-size: 13px;
+        top: 14px;
+    }
+
+    body > main > section#Contact > section > div > form > label {
+        font-size: 15px;
+    }
+
+    body > main > section#Contact > section > div > form > div {
+        padding-bottom: 2px;
+    }
+
+    section#Contact > section > div > form > div > input.form_buttons {
+        font-size: 14px;
+    }
+
+    body > footer > div {
+        height: 120px;
+    }
+
+    body > footer > div > nav {
+        top: 20px;
+    }
+
+    body > footer > div > section {
+        font-size: 13px;
+        line-height: 16px;
+        top: 72px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+
+    body > header > nav > ul {
+        line-height: 24px;
+        text-align: center;
+    }
+
+    body > header > nav > ul > li {
+        padding: 18px;
+    }
+
+    body > header > nav {
+        font-size: 13px;
+    }
+
+    body > header {
+        height: 65px;
+    }
+
+    body > main > section#Home {
+        display: flex;
+        flex-flow: column-reverse;
+        height: 500px;
+        padding-top: 100px;
+        text-align: center;
+        width: 100vw;
+
+        /*width: 850px;*/
+    }
+
+    body > main > section#Home > div:nth-child(1) > article {
+        margin: auto;
+        width: max-content;
+    }
+
+    body > main > section#Home > div:nth-child(1) {
+        width: 100%;
+    }
+
+    div.social_media_button {
+        background: #C5C6C7;
+        border-radius: 100%;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        height: 40px;
+
+        left: 0;
+        margin: auto 16px auto auto;
+        position: relative;
+        right: 0;
+        width: 40px;
+    }
+
+    body > main > section#Home > div:nth-child(2) {
+        text-align: center;
+        width: 100%;
+    }
+
+    body > main > section#Home > div:nth-child(2) > picture > img {
+
+        height: 220px;
+    }
+
+    body > main > section#Home > div:nth-child(1) > article > nav {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 32px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 21px;
+        margin-top: -5px;
+    }
+
+    h3 {
+        font-family: "Roboto Medium", sans-serif;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: center;
+
+    }
+
+    h4 {
+        font-family: "Roboto Light", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    h5 {
+        font-family: "Roboto Medium", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 70px;
+        margin-bottom: -43px;
+
+    }
+
+    h6 {
+        font-family: "Roboto Light", sans-serif;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 2px;
+        margin-bottom: -20px;
+
+    }
+
+    div.social_media_button {
+        height: 32px;
+        width: 32px;
+
+    }
+
+    .fa-lg {
+        font-size: 1em;
+    }
+
+    body > main > section#About {
+        padding-top: 60px;
+        width: 85vw;
+
+    }
+
+    body > main > section#About > article:nth-child(1) {
+        font-size: 14px;
+    }
+
+    body > main > section#About > article:nth-child(2) {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    body > main > section#About > article:nth-child(2) > picture {
+        align-self: center;
+    }
+
+    body > main > section#About > article:nth-child(2) > section {
+        align-self: center;
+    }
+
+    body > main > section#About > article:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    body > main > section#About > article:nth-child(2) > picture > img {
+        height: 220px;
+    }
+
+    body > main > section#About > article:nth-child(2) > section {
+        margin: auto;
+    }
+
+    body > main > section#About > article:nth-child(2) > section > p {
+        font-size: 0.82em;
+        line-height: 1em;
+        margin-left: 0;
+        margin-top: 22px;
+        text-align: center;
+    }
+
+
+    body > main > section#Contact {
+
+        padding-top: 65px;
+        top: 2800px;
+    }
+
+    body > main > section#Contact > section > div > form {
+        height: 340px;
+        margin-left: 7vw;
+        margin-top: 20px;
+        width: 85%;
+
+    }
+
+    body > main > section#Contact > section > address {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 225px;
+        width: 100%;
+
+    }
+
+    body > main > section#Contact > section > address > div:nth-child(1) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    body > main > section#Contact > section > address > div:nth-child(2) {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .contact_detail {
+        top: 10px;
+    }
+
+    body > main > section#Contact > section > address > div:nth-child(3) {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    body > main > section#Contact > section > div {
+        height: 500px;
+        left: 0;
+        width: 100%;
+    }
+
+    div.gray_circle {
+        height: 48px;
+        margin: 14px auto auto;
+        position: relative;
+        width: 48px;
+    }
+
+    body > main > section#Contact > section > address > div > div > img {
+        padding-top: 6px;
+        position: relative;
+        width: 2em;
+
+    }
+
+    body > main > section#Contact > section > div > form > div {
+        border-bottom: 1px solid #25274D;
+        padding-bottom: 4px;
+    }
+
+    body > main > section#Contact > section {
+        background-color: rgba(197, 198, 199, 0.5);
+        height: 600px;
+    }
+
+    div.gray_circle {
+        height: 48px;
+        margin: 20px auto auto;
+        width: 48px;
+    }
+
+    body > main > section#Contact > section > address > div > div > img {
+        width: 2em;
+    }
+
+    .contact_detail {
+        font-size: 13px;
+        top: 14px;
+    }
+
+    body > main > section#Contact > section > div > form {
+        font-size: 14px;
+    }
+
+    body > main > section#Contact > section > div > form > div {
+        padding-bottom: 3px;
+    }
+
+    section#Contact > section > div > form > div > input.form_buttons {
+        font-size: 14px;
+    }
+
+    body > main > section#Contact > section > div > form > div:nth-child(6) {
+        padding-top: 18px;
+        text-align: center;
+    }
+
+    body > main > section#Contact > section > div > form > div > input.form_buttons:nth-child(1) {
+        left: 0;
+        right: 40%;
+
+    }
+
+    body > main > section#Contact > section > div > form > div > input.form_buttons:nth-child(2) {
+        left: 40%;
+        right: 0;
+
+    }
+
+    body > footer > div {
+        height: 120px;
+    }
+
+    body > footer > div > nav {
+        top: 20px;
+    }
+
+    body > footer > div > section {
+        font-size: 13px;
+        line-height: 16px;
+        top: 72px;
+    }
+
+}
+
