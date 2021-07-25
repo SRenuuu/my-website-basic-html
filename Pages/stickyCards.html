@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky Cards</title>
+    <link href="../Assets/CSS/normalize.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Roboto Light";
+        }
+
+        section {
+            background: white;
+            height: 100vh;
+            margin-top: 0;
+        }
+
+        section > div {
+            background: red;
+            color: white;
+            height: 100px;
+            position: sticky;
+            top: 0;
+        }
+
+        section:nth-child(1) {
+            background: rgb(46, 204, 113);
+        }
+
+        section:nth-child(2) {
+            background: rgb(52, 152, 219);
+        }
+
+        section:nth-child(3) {
+            background: rgb(230, 126, 34);
+        }
+
+        section:nth-child(4) {
+            background: rgb(231, 76, 60);
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h1> Card 1 </h1>
+    </div>
+</section>
+<section>
+    <div>
+        <h1> Card 2 </h1>
+    </div>
+</section>
+<section>
+    <div>
+        <h1> Card 3 </h1>
+    </div>
+</section>
+<section>
+    <div>
+        <h1> Card 4 </h1>
+    </div>
+</section>
+</body>
+</html>

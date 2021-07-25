@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Image Slider</title>
+    <link rel="stylesheet" href="../Assets/CSS/normalize.css">
+    <style>
+        img:nth-child(2) {
+            margin-left: 100vw;
+        }
+
+        img:nth-child(3) {
+            margin-left: 200vw;
+
+        }
+
+        img:nth-child(4) {
+            margin-left: 300vw;
+
+        }
+
+        img:nth-child(5) {
+            margin-left: 400vw;
+
+        }
+
+        img {
+            width: 100vw;
+            position: absolute;
+            top: 500px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        main {
+            position: absolute;
+            margin-left: 0px;
+            /*animation-name: imgslider;*/
+            /*animation-duration: 12s;*/
+            /*animation-iteration-count: infinite;*/
+            /*animation-direction: alternate;*/
+            /*animation-timing-function: ease-in-out;*/
+            /*animation-delay: 1s;*/
+        }
+
+        @keyframes imgslider {
+            0% {
+                margin-left: 0vw;
+            }
+
+            25% {
+                margin-left: -100vw;
+            }
+            50% {
+                margin-left: -200vw;
+            }
+            75% {
+                margin-left: -300vw;
+            }
+            100% {
+                margin-left: -400vw;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <img src="../Assets/Images/ImageSlider/asphalt-dark-dawn-endless-531321.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/autumn-autumn-leaves-blur-close-up-589840.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/gray-bridge-and-trees-814499.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/view-of-elephant-in-water-247431.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/wide-angle-photo-of-road-1563355.jpg" alt="">
+</main>
+</body>
+</html>

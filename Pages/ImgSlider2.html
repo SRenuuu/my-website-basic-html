@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Image Slider</title>
+    <link rel="stylesheet" href="../Assets/CSS/normalize.css">
+    <style>
+        div {
+            background: white;
+            position: absolute;
+            top: 0;
+            z-index: 5;
+            opacity: 75%;
+        }
+
+        img:nth-child(2) {
+            margin-left: 100vw;
+        }
+
+        img:nth-child(3) {
+            margin-left: 200vw;
+
+        }
+
+        img:nth-child(4) {
+            margin-left: 300vw;
+
+        }
+
+        img:nth-child(5) {
+            margin-left: 400vw;
+
+        }
+
+        img {
+            width: 100vw;
+            position: absolute;
+            top: 500px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        main {
+            position: absolute;
+
+
+            /*animation-name: imgslider;*/
+            /*animation-play-state: paused;*/
+            /*animation-duration: 2s;*/
+            /*animation-iteration-count: 1;*/
+            /*animation-direction: normal;*/
+            /*animation-fill-mode: forwards;*/
+            /*animation-timing-function: ease-in-out;*/
+        }
+
+        /*@keyframes imgslider {*/
+        /*    0%{*/
+        /*        margin-left: 0vw;*/
+        /*    }*/
+
+        /*    100%{*/
+        /*        margin-left: -100vw;*/
+        /*    }*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div>
+    <button id="btn1">Previous</button>
+    <button id="btn2">Next</button>
+</div>
+<main>
+    <img src="../Assets/Images/ImageSlider/asphalt-dark-dawn-endless-531321.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/autumn-autumn-leaves-blur-close-up-589840.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/gray-bridge-and-trees-814499.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/view-of-elephant-in-water-247431.jpg" alt="">
+    <img src="../Assets/Images/ImageSlider/wide-angle-photo-of-road-1563355.jpg" alt="">
+</main>
+
+<script src="../Assets/JS/jquery-3.5.1.min.js"></script>
+<script>
+    var count = 0;
+    $('#btn1').click(function () {
+        // let img=$('main');
+        // let margin=img.attr('margin-left');
+        // console.log(margin);
+        // margin=margin-1366;
+        // $('main').attr('margin-left','-100vw');
+        // console.log(margin);
+        $('main').css({
+            'transform': 'translateX(' - '+count+' % ')',
+            'transition': 'all 2s',
+        });
+    })
+
+    $('#btn2').click(function () {
+        count = count - 20;
+        // let img=$('main');
+        // let margin=img.attr('margin-left');
+        // console.log(margin);
+        // margin=margin-1366;
+        // $('main').attr('margin-left','-100vw');
+        // console.log(margin);
+        $('main').css({
+            'transform': 'translateX(count)',
+            'transition': 'all 2s',
+        });
+    })
+
+</script>
+
+
+</body>
+</html>

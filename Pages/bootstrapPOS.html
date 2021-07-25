@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" style="transition: all 2s">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Assets/CSS/bootstrap.css">
+    <title>Point of Sales</title>
+</head>
+<body>
+
+<!--<div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="Assets/Images/POS/1.jpg?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Assets/Images/POS/2.jpg?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Assets/Images/POS/3.jpg?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+        </div>
+    </div>-->
+<header>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-lg fixed-top">
+        <h5 class="my-0 mr-md-auto font-weight-normal">SR POS System</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <button class="btn bg-light p-2 mr-2 text-dark border-0 rounded-lg" id="dashboardBtn">Dashboard</button>
+            <button class="btn bg-light p-2 mr-2 text-dark border-0 rounded-lg" id="customerBtn">Customers</button>
+            <button class="btn bg-light p-2 mr-2 text-dark border-0 rounded-lg" id="itemBtn">Items</button>
+            <button class="btn bg-light p-2 mr-2 text-dark border-0 rounded-lg" id="orderBtn">Orders</button>
+            <!--            <a class="p-2 text-dark" href="#">Dashboard</a>-->
+            <!--            <a class="p-2 text-dark" href="#">Customers</a>-->
+            <!--            <a class="p-2 text-dark" href="#">Items</a>-->
+            <!--            <a class="p-2 text-dark" href="#">Orders</a>-->
+            <!--            <a class="btn btn-outline-primary" href="#">Logout</a>-->
+        </nav>
+
+    </div>
+</header>
+
+<main id="dashboard" class="container-fluid p-0 bg-light" style="display: none">
+
+
+    <div class="px-3 py-3 mt-5 pt-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 pt-3">Dashboard</h1>
+        <p class="lead">Everything at a glance!</p>
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Customers</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title text-xl-center">15</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Total Customers</li>
+                        <li>- All Time -</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-outline-primary">Add</button>
+                    <button type="button" class="btn btn-lg btn-outline-primary">Edit</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Items</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">123</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Total Items</li>
+                        <li>- In Stock -</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="card mb-4 shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Orders</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">25</h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Orders</li>
+                        <li>- Today -</li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-primary">Add Order</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Sales - All Time</h4>
+                </div>
+                <div class="card-body">
+                    <img src="../Assets/Images/POS/chart.png" width="100%">
+                </div>
+            </div>
+            <div class="card mb-4 shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Profit - Monthly</h4>
+                </div>
+                <div class="card-body">
+                    <img src="../Assets/Images/POS/6.jpg" width="100%">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-deck mb-3 text-center">
+
+
+        </div>
+    </div>
+
+</main>
+
+<main id="customer" class="container-fluid p-0 bg-light" style="display: none">
+
+
+    <div class="px-3 py-3 mt-5 pt-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 pt-3">Customers</h1>
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Manage Customers</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4 ">
+                        <form>
+                            <table class="table table-borderless" style="width: 100%;">
+                                <tbody>
+                                <tr class="d-table-row">
+                                    <td class="p-2">
+                                        <li>ID:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="ID" class="border-primary ml-2" style="width: 80%" type="text">
+                                        </li>
+                                    </td>
+                                </tr>
+                                <tr class="d-table-row">
+                                    <td class="p-2">
+                                        <li>Name:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="Name" class="border-primary ml-2" style="width: 80%" type="text">
+                                        </li>
+                                    </td>
+                                </tr>
+                                <tr class="d-table-row">
+                                    <td class="p-2">
+                                        <li>Address:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="Address" class="border-primary ml-2" style="width: 80%"
+                                                   type="text"></li>
+                                    </td>
+                                </tr>
+                                </tr>
+                                <tr class="d-table-row">
+                                    <td class="p-2 align-content-lg-end">
+                                        <li>Telephone No:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="Telephone" class="border-primary ml-2" style="width: 80%"
+                                                   type="text"></li>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+                        </form>
+
+                    </ul>
+                    <button id="addBtn" type="button" class="btn btn-lg btn-outline-success m-2">Add</button>
+                    <button id="updateBtn" type="button" class="btn btn-lg btn-outline-warning m-2">Update</button>
+                    <button id="deleteBtn" type="button" class="btn btn-lg btn-outline-danger m-2">Delete</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow">
+                <div class="card-body">
+                    <table class="table table-bordered border-primary table-light table-hover" style="width: 100%;"
+                           id="customerTbl">
+
+                        <tr class="thead-light">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Tel</th>
+                        </tr>
+                        <tbody id="customerTBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+    </div>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script>
+    function clearAll() {
+        $('main').css('display', 'none');
+
+    }
+
+    $('#dashboardBtn').click(function () {
+        clearAll();
+
+        $('#dashboard').css('display', 'block')
+    });
+    $('#customerBtn').click(function () {
+        clearAll();
+
+        $('#customer').css('display', 'block')
+    });
+
+    $('#addBtn').click(function () {
+        let id = $('#ID').val();
+        let name = $('#Name').val();
+        let address = $('#Address').val();
+        let telephone = $('#Telephone').val();
+
+        $('#customerTBody').append(`<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${telephone}</td></tr>`);
+
+
+        $('#customerTBody').children().last().click(function () {
+            var id = $($(this).children().get(0)).text();
+            var name = $($(this).children().get(1)).text();
+            var address = $($(this).children().get(2)).text();
+            var telephone = $($(this).children().get(3)).text();
+
+            $('#ID').val(id);
+            $('#Name').val(name);
+            $('#Address').val(address);
+            $('#Telephone').val(telephone);
+        });
+        clearInputs();
+    });
+
+    function clearInputs() {
+        $('#ID').val('');
+        $('#Name').val('');
+        $('#Address').val('');
+        $('#Telephone').val('');
+
+    }
+
+
+</script>
+</body>
+</html>

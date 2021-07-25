@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Animation using CSS</title>
+    <link rel="stylesheet" href="../Assets/CSS/normalize.css">
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        #sky {
+            overflow-x: hidden;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+        }
+
+        #background {
+            width: 200%;
+            height: 100%;
+            position: absolute;
+            animation: move 10s infinite;
+
+
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0px);
+            }
+            to {
+                transform: translateX(-3000px);
+
+            }
+
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(3600deg);
+            }
+        }
+
+        #road {
+            width: 200%;
+            height: 30%;
+            bottom: 0%;
+            position: absolute;
+        }
+
+        #city {
+            bottom: 30%;
+            width: 200%;
+            height: 80%;
+            position: absolute;
+        }
+
+        #car {
+            height: 150px;
+            width: 300px;
+            bottom: 20%;
+            position: fixed;
+            margin-left: 500px;
+            z-index: 10;
+        }
+
+        #wheel1 {
+            width: 70px;
+            height: 70px;
+            bottom: 21%;
+            margin-left: 520px;
+            position: fixed;
+            z-index: 20;
+            animation: rotate 10s infinite;
+
+        }
+
+        #wheel2 {
+            width: 70px;
+            height: 70px;
+            bottom: 21%;
+            margin-left: 704px;
+            position: fixed;
+            z-index: 20;
+            animation: rotate 10s infinite;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div>
+        <img src="../Assets/Images/CarAnimation/sky.jpg" alt="sky" id="sky">
+    </div>
+    <div id="background">
+        <img src="../Assets/Images/CarAnimation/road.jpg" alt="road" id="road">
+        <img src="../Assets/Images/CarAnimation/city.png" alt="city" id="city">
+    </div>
+    <div id="subject">
+        <img src="../Assets/Images/CarAnimation/car.png" alt="car" id="car">
+        <img src="../Assets/Images/CarAnimation/wheel.png" alt="" id="wheel1">
+        <img src="../Assets/Images/CarAnimation/wheel.png" alt="" id="wheel2">
+        <img src="../index.html" alt="">
+    </div>
+</main>
+</body>
+</html>

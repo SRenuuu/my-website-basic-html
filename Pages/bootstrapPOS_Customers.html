@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Assets/CSS/bootstrap.css">
+    <title>Point of Sales</title>
+</head>
+<body>
+
+<!--<div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="Assets/Images/POS/1.jpg?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Assets/Images/POS/2.jpg?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="Assets/Images/POS/3.jpg?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+        </div>
+    </div>-->
+
+<main class="container-fluid p-0 bg-light">
+
+
+    </div>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-lg fixed-top">
+        <h5 class="my-0 mr-md-auto font-weight-normal">SR POS System</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="#">Dashboard</a>
+            <a class="p-2 text-dark" href="#">Customers</a>
+            <a class="p-2 text-dark" href="#">Items</a>
+            <a class="p-2 text-dark" href="#">Orders</a>
+            <!--            <a class="btn btn-outline-primary" href="#">Logout</a>-->
+        </nav>
+
+    </div>
+
+    <div class="px-3 py-3 mt-5 pt-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 pt-3">Customers</h1>
+    </div>
+
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Manage Customers</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4 ">
+                        <form>
+                            <table class="table table-borderless" style="width: 100%;">
+                                <tbody>
+                                <tr class="d-table-row">
+                                    <td class="p-2">
+                                        <li>ID:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="ID" class="border-primary ml-2" style="width: 80%" type="text">
+                                        </li>
+                                    </td>
+                                </tr>
+                                <tr class="d-table-row">
+                                    <td class="p-2">
+                                        <li>Name:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="Name" class="border-primary ml-2" style="width: 80%" type="text">
+                                        </li>
+                                    </td>
+                                </tr>
+                                <tr class="d-table-row">
+                                    <td class="p-2">
+                                        <li>Address:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="Address" class="border-primary ml-2" style="width: 80%"
+                                                   type="text"></li>
+                                    </td>
+                                </tr>
+                                </tr>
+                                <tr class="d-table-row">
+                                    <td class="p-2 align-content-lg-end">
+                                        <li>Telephone No:</li>
+                                    </td>
+                                    <td class="">
+                                        <li><input id="Telephone" class="border-primary ml-2" style="width: 80%"
+                                                   type="text"></li>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+                        </form>
+
+                    </ul>
+                    <button id="Add" type="button" class="btn btn-lg btn-outline-success m-2">Add</button>
+                    <button id="Update" type="button" class="btn btn-lg btn-outline-warning m-2">Update</button>
+                    <button id="Delete" type="button" class="btn btn-lg btn-outline-danger m-2">Delete</button>
+                </div>
+            </div>
+            <div class="card mb-4 shadow">
+                <div class="card-body">
+                    <table class="table table-bordered border-primary table-light" style="width: 100%;">
+
+                        <tr class="thead-light">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Tel</th>
+                        </tr>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+    </div>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script>
+    let ID = document.getElementById("ID");
+    let Name = document.getElementById("Name");
+    let Address = document.getElementById("Address");
+    let Telephone = document.getElementById("Telephone");
+
+    let Add = document.getElementById("Add");
+    let Update = document.getElementById("Update");
+    let Delete = document.getElementById("Delete");
+
+    Add.addEventListener("click", function () {
+
+
+        ID = ID.value;
+        Name = Name.value;
+        Address = Address.value;
+        Telephone = Telephone.value;
+
+
+    })
+
+
+</script>
+</body>
+</html>

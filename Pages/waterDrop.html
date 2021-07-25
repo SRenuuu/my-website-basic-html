@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Drop Animation</title>
+    <link rel="stylesheet" href="../Assets/CSS/normalize.css">
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            animation-name: myanimation;
+            animation-duration: 3s;
+            border-radius: 100%;
+            border: 10px solid red;
+
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            right: 0;
+
+        }
+
+        @keyframes myanimation {
+            0% {
+                width: 1px;
+                height: 1px;
+                border: 4px solid red;
+
+
+            }
+            100% {
+                width: 300px;
+                height: 300px;
+                border: 8px solid white;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <div>
+    </div>
+</main>
+</body>
+</html>

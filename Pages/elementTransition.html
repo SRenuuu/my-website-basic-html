@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Element Transition</title>
+    <link href="../Assets/CSS/normalize.css" rel="stylesheet">
+    <style>
+
+        body > main {
+            background: dodgerblue;
+            height: 100vh;
+            position: relative;
+            width: 100vw;
+        }
+
+        body > main > div {
+            bottom: 0;
+            height: 400px;
+
+            left: 0;
+            margin: auto;
+
+            position: absolute;
+
+            right: 0;
+            stroke: red;
+            stroke-width: 30px;
+            top: 0;
+            transition: all 5s;
+            width: 400px;
+        }
+
+        body > main > div:hover:before {
+            transform: rotate(360deg);
+            transition: all 5s;
+
+        }
+
+        body > main > div::before {
+            background: gray;
+            border: 15px solid white;
+            border-radius: 100%;
+            border-top: 15px solid red;
+            bottom: 0;
+            box-shadow: 0px 0px 50px 3px white;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: all 5s;
+
+        }
+
+        body > main > div > h1 {
+            bottom: 0;
+            color: white;
+            font-family: "Roboto Light";
+            font-size: 60px;
+            height: max-content;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: max-content;
+        }
+
+    </style>
+
+</head>
+<body>
+<main>
+    <div>
+
+        <h1>RWAD</h1>
+
+    </div>
+
+</main>
+
+</body>
+</html>

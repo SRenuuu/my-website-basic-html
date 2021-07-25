@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Sliding Menu</title>
+    <link rel="stylesheet" href="../Assets/CSS/normalize.css">
+    <style>
+        body > main > nav {
+            margin-top: 50px;
+        }
+
+        body > main > nav > div {
+            width: 300px;
+            height: 50px;
+            margin-bottom: 40px;
+            margin-left: -275px;
+            background: cornflowerblue;
+            box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.4);
+            transition: all 2s;
+            padding-top: 25px;
+            padding-left: 25px;
+            font-family: "Roboto Light";
+            font-size: 26px;
+            transition-timing-function: ease-in-out;
+        }
+
+        body > main > nav > div:hover {
+            margin-left: -8px;
+            transition: all 1s;
+            background: darkblue;
+            color: white;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <br>
+    <nav>
+        <div>
+            Menu One
+        </div>
+        <div>
+            Menu Two
+        </div>
+        <div>
+            Menu Three
+        </div>
+        <div>
+            Menu Four
+        </div>
+        <div>
+            Menu Five
+        </div>
+    </nav>
+</main>
+</body>
+</html>
